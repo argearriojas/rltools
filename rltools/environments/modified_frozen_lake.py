@@ -107,15 +107,6 @@ class ModifiedFrozenLake(discrete.DiscreteEnv):
                         if start_prob > 0.0:
                             sat_li.append((start_prob, ini_state, rew, done))
 
-                # if (not cyclic_mode) or (cyclic_mode and not done):
-                #     done = done and not never_done
-                #     sat_li.append((prob, newstate, rew, done))
-                # else:
-                #     done = done and not never_done
-                #     for ini_state, start_prob in enumerate(isd):
-                #         if start_prob > 0.0:
-                #             sat_li.append((start_prob, ini_state, rew, done))
-
         for row in range(nrow):
             for col in range(ncol):
                 state = to_s(row, col)
